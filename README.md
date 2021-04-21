@@ -26,6 +26,12 @@ Generate an app_key for your Laravel App
 php artisan key:generate
 ```
 
+Migrate database and seed some sample data
+
+```bash
+php artisan migrate --seed
+```
+
 ## Usage
 
 Authenticate and get user token
