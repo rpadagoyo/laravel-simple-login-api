@@ -26,3 +26,16 @@ Generate an app_key for your Laravel App
 php artisan key:generate
 ```
 
+## Usage
+
+Authenticate and get user token
+
+```bash
+curl  -H "Accept: application/json" --data "email=kayla.zulauf@example.net&password=password" -X POST http://domain.test/api/login
+```
+Get user details
+
+```bash
+curl -i -H "Accept: application/json" -H "Authorization: Bearer 6|7hkD95s9MR3HcvdD1thtEXW467iRLQnkfHodudu9" -X GET http://domain.test/api/user
+```
+
